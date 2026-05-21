@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. BG | AI & Computer Vision Consultant</title>
 <link rel="icon" type="image/png" href="favicon.png">
-<!-- To add your icon later: save your image as favicon.png in the same folder as this HTML file -->
-<!-- Recommended sizes: 32x32px or 64x64px PNG -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 <style>
@@ -216,8 +214,8 @@
     <div class="stats-grid">
       <div class="stat"><div class="stat-num">PhD</div><div class="stat-label">Generative modeling &amp; neural networks</div></div>
       <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Student AI projects mentored</div></div>
-      <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Production AI systems shipped</div></div>
-      <div class="stat"><div class="stat-num">0</div><div class="stat-label">Vendor kickbacks. Ever.</div></div>
+      <div class="stat"><div class="stat-num">6+</div><div class="stat-label">AI systems built &amp; actively maintained</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Funded research projects active now</div></div>
     </div>
   </div>
 </section>
@@ -228,7 +226,7 @@
     <div class="section-header">
       <span class="eyebrow">Core consulting domains</span>
       <h2>Where I do my best work</h2>
-      <p>Each domain maps directly to a project I've built and deployed &mdash; not a whitepaper I read.</p>
+      <p>Each domain maps directly to a funded project or deployed system &mdash; not a whitepaper I read.</p>
     </div>
     <div class="domains-grid">
       <div class="domain-card">
@@ -255,6 +253,12 @@
         <p>I read the technical spec, not just the pitch deck. I tell you what your vendor can't deliver before you sign &mdash; or audit what you've already deployed.</p>
         <span class="domain-chip">All industries</span>
       </div>
+      <div class="domain-card">
+        <div class="domain-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M6 20v-2a6 6 0 0112 0v2"/><path d="M18 8h4M2 8h4"/></svg></div>
+        <h3>Agentic AI Systems</h3>
+        <p>I build and evaluate multi-agent architectures from scratch &mdash; Planner-driven orchestration, agent memory, tool use, and LLM grounding. Including a funded agentic digital twin (FacultyTwin) and a from-scratch multi-agent coder.</p>
+        <span class="domain-chip">Enterprise AI &middot; Automation</span>
+      </div>
     </div>
   </div>
 </section>
@@ -265,24 +269,36 @@
     <div class="section-header">
       <span class="eyebrow">Selected projects</span>
       <h2>Things I've actually built</h2>
-      <p>Case study conversations available for any of these.</p>
+      <p>Active research and deployed systems. Case study conversations available for any of these.</p>
     </div>
     <div class="projects-list">
       <div class="project-row">
-        <div><p class="project-name">PyroScan &mdash; Drone-Based Wildfire Detection</p><p class="project-desc">Real-time computer vision system for early wildfire detection from drone footage. Designed for speed and reliability in safety-critical environments with limited connectivity and edge compute constraints.</p></div>
-        <span class="project-tag">Safety AI &middot; CV</span>
+        <div><p class="project-name">SENSE &mdash; Real-Time LLM Hallucination Prevention <a href="https://dev.to/codewithbg/i-built-a-real-time-hallucination-prevention-system-for-llms-using-computer-vision-1age" target="_blank" style="font-size:.72rem;color:var(--blue);font-weight:500;text-decoration:none;margin-left:.4rem;">Read article &rarr;</a></p><p class="project-desc">A real-time framework that takes an LLM&rsquo;s claims about the world, checks them against live visual input using computer vision, and flags contradictions before they reach the user. Symbolic-neural grounding using a deterministic audit layer to constrain probabilistic LLM output. Heading toward IEEE publication.</p></div>
+        <span class="project-tag">LLMs &middot; CV &middot; Funded</span>
+      </div>
+      <div class="project-row">
+        <div><p class="project-name">FacultyTwin &mdash; Agentic Digital Twin of a Faculty Member <span style="font-size:.72rem;color:var(--blue);font-weight:500;">(funded)</span></p><p class="project-desc">An agentic system that creates a digital twin of a faculty member &mdash; capable of answering questions, handling academic tasks, and replicating the faculty&rsquo;s knowledge and communication style. Funded research at St. Cloud State University.</p></div>
+        <span class="project-tag">Agentic AI &middot; Funded</span>
+      </div>
+      <div class="project-row">
+        <div><p class="project-name">Vision Assist &mdash; Computer Vision for the Visually Impaired <span style="font-size:.72rem;color:var(--blue);font-weight:500;">(funded)</span></p><p class="project-desc">A funded student-faculty research project building a vision-based system that gives visually impaired users richer, real-time information about their surroundings. Applied computer vision with direct human accessibility impact.</p></div>
+        <span class="project-tag">CV &middot; Accessibility &middot; Funded</span>
+      </div>
+      <div class="project-row">
+        <div><p class="project-name">Multi-Agent Coder &mdash; Agentic Coding System from Scratch <a href="https://dev.to/codewithbg/i-built-a-multi-agent-coding-system-from-scratch-in-python-no-frameworks-44l9" target="_blank" style="font-size:.72rem;color:var(--blue);font-weight:500;text-decoration:none;margin-left:.4rem;">Read article &rarr;</a></p><p class="project-desc">A Planner-driven multi-agent system where specialized agents (Architect, Engineer, Critic, TestRunner, Refactorer) collaborate to turn plain-English requests into tested Python code. Built from scratch in pure Python &mdash; no LangChain, no AutoGen.</p></div>
+        <span class="project-tag">Agentic AI &middot; Python</span>
       </div>
       <div class="project-row">
         <div><p class="project-name">GAN Fake Profile Detector</p><p class="project-desc">Identifies AI-generated avatars and synthetic identities using generative adversarial network analysis. Directly applicable to fraud prevention, KYC pipelines, and platform trust systems at scale.</p></div>
         <span class="project-tag">Fraud &middot; Security</span>
       </div>
       <div class="project-row">
-        <div><p class="project-name">CharmGuard &mdash; Rust AI Firewall <span style="font-size:.72rem;color:var(--blue);font-weight:500;">(in progress)</span></p><p class="project-desc">Local, Rust-based AI system that monitors and blocks distractions at the OS level without cloud dependencies. Relevant to data-private AI deployments and compliance-sensitive organizations.</p></div>
+        <div><p class="project-name">CharmGuard &mdash; Rust AI Firewall <span style="font-size:.72rem;color:var(--blue);font-weight:500;">(in progress)</span></p><p class="project-desc">Local, Rust-based AI system that monitors and blocks at the OS level without cloud dependencies. Relevant to data-private AI deployments and compliance-sensitive organizations.</p></div>
         <span class="project-tag">Edge AI &middot; Rust</span>
       </div>
       <div class="project-row">
-        <div><p class="project-name">Charm &mdash; LSTM Productivity App</p><p class="project-desc">AI-powered productivity tool for students with ADHD, using LSTM models to adapt to individual focus patterns. Demonstrates accessible AI design with real behavioral impact.</p></div>
-        <span class="project-tag">EdTech &middot; Accessibility</span>
+        <div><p class="project-name">ElderConnect &mdash; AI Platform to Protect Seniors from Cyberthreats <a href="https://www.semanticscholar.org/paper/ElderConnect%3A-An-AI-Powered-Platform-to-Empower-Sayeed-Tamut/fec512a8323f2ab71860ce4cc7f86e85e05bbe7b" target="_blank" style="font-size:.72rem;color:var(--blue);font-weight:500;text-decoration:none;margin-left:.4rem;">IEEE paper &rarr;</a></p><p class="project-desc">A published IEEE research paper and platform that helps elderly users recognize and defend against cyberthreats including phishing, vishing, baiting, and pretexting. An accessible, AI-driven system designed specifically for a vulnerable population &mdash; combining security AI with inclusive design.</p></div>
+        <span class="project-tag">IEEE Published &middot; Security AI</span>
       </div>
     </div>
   </div>
@@ -427,9 +443,9 @@
     <div class="about-layout">
       <div class="about-avatar" style="padding:0;overflow:hidden;"><img src="profile.png" alt="Dr. BG" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;"></div>
       <div class="about-text">
-        <p>I'm an Assistant Professor of Computer Science at St. Cloud State University and head of the university's AI Innovation &amp; Research Committee. My PhD focused on generative modeling, machine learning, and neural networks &mdash; with applied work spanning drone-based safety systems, deepfake detection, and edge AI in Rust.</p>
-        <p><strong>I consult because I kept seeing companies deploy AI that no one on their team could explain, audit, or fix when it failed.</strong> My value isn't knowing the latest model &mdash; it's understanding the fundamentals underneath it well enough to tell you when something won't survive production.</p>
-        <p>I work with a small number of clients at a time. I don't take every engagement. If you want the honest technical read, let's talk.</p>
+        <p>I'm an Assistant Professor of Computer Science at St. Cloud State University. A previous head of Arkansas Tech University's AI Committee. My PhD focused on generative modeling, machine learning, and neural networks. I currently lead multiple funded research projects &mdash; including <strong>FacultyTwin</strong>, an agentic digital twin of a faculty member; a <strong>vision-based assistive system</strong> for the visually impaired; and <strong>SENSE</strong>, a real-time LLM hallucination prevention framework grounded in computer vision.</p>
+        <p><strong>I consult because active research gives me something most consultants don't have: I know what's actually being built in labs right now, not just what vendors are packaging for sale.</strong> When I tell you an AI system won't hold up in production, I'm drawing on the same reasoning I use to design systems that do.</p>
+        <p>I write publicly on DEV.to about what I build. I work with a small number of clients at a time and don't take every engagement. If you want the honest technical read, let's talk.</p>
         <p><strong>Based in Minnesota. Available for Twin Cities engagements and remote advisory.</strong><br>
         <a href="mailto:drbghoshconsults@yahoo.com" style="color:var(--blue);text-decoration:none;font-size:.88rem;">drbghoshconsults@yahoo.com</a></p>
       </div>
@@ -442,7 +458,7 @@
   <div class="container">
     <div class="cta-inner">
       <h2>Ready for AI that actually works?</h2>
-      <p>Book a free 30-minute call. You'll leave with clarity on your AI situation &mdash; whether or not we work together. No pitch, no pressure.</p>
+      <p>Book a free 30-minute call. You'll leave with clarity on your AI situation whether or not we work together. No pitch, no pressure.</p>
       <a href="mailto:drbghoshconsults@yahoo.com" class="btn-white">Book your free strategy call &#8594;</a>
     </div>
   </div>
