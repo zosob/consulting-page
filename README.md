@@ -1,4 +1,4 @@
-# BG — AI & Computer Vision Consulting
+# BG -- AI & Computer Vision Consulting
 
 A minimalist, Notion-style single-page landing page for professional AI auditing and computer vision consulting services. 
 
