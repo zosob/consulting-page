@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Paste them right here -->
+  <title>Computer Vision & AI Systems Consulting | Dr. Bhaskar Ghosh</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+
+  <!-- Your existing stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  .lp{font-family:'DM Sans',sans-serif;color:var(--color-text-primary);max-width:800px;margin:0 auto;padding:2rem 1.5rem 4rem}
+  .eyebrow{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--color-text-secondary);margin-bottom:.85rem}
+  .hero-name{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:600;line-height:1.18;margin-bottom:1.1rem}
+  .hero-name em{font-style:italic;font-weight:400;color:#185FA5}
+  .hero-sub{font-size:1rem;color:var(--color-text-secondary);line-height:1.75;max-width:600px;margin-bottom:2rem}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:2.5rem}
+  .btn-p{background:#185FA5;color:#fff;border:none;padding:11px 22px;border-radius:var(--border-radius-md);font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:500;cursor:pointer;text-decoration:none;display:inline-block}
+  .btn-s{background:transparent;color:var(--color-text-primary);border:0.5px solid var(--color-border-primary);padding:11px 22px;border-radius:var(--border-radius-md);font-family:'DM Sans',sans-serif;font-size:.9rem;cursor:pointer;text-decoration:none;display:inline-block}
+  .tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:3rem}
+  .tag{font-size:.72rem;background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:20px;padding:4px 12px;color:var(--color-text-secondary);display:inline-flex;align-items:center;gap:5px}
+  hr.div{border:none;border-top:0.5px solid var(--color-border-tertiary);margin:2.5rem 0}
+  .slabel{font-size:11px;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--color-text-secondary);margin-bottom:1.5rem}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-bottom:3rem}
+  .stat{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem 1.1rem}
+  .stat-n{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:600;color:#185FA5;line-height:1}
+  .stat-l{font-size:.75rem;color:var(--color-text-secondary);margin-top:4px}
+  .domains{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-bottom:3rem}
+  .domain{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1.25rem;background:var(--color-background-primary)}
+  .domain-icon{font-size:20px;color:#185FA5;margin-bottom:.6rem}
+  .domain-title{font-weight:500;font-size:.92rem;margin-bottom:.35rem}
+  .domain-desc{font-size:.8rem;color:var(--color-text-secondary);line-height:1.65}
+  .domain-tag{display:inline-block;margin-top:.7rem;font-size:.72rem;background:#E6F1FB;color:#0C447C;padding:3px 10px;border-radius:20px}
+  .projects{display:flex;flex-direction:column;gap:0;margin-bottom:3rem}
+  .proj{display:grid;grid-template-columns:3fr 1fr;gap:1rem;padding:1.1rem 0;border-bottom:0.5px solid var(--color-border-tertiary);align-items:start}
+  .proj:last-child{border-bottom:none}
+  .proj-name{font-weight:500;font-size:.9rem;margin-bottom:.3rem}
+  .proj-desc{font-size:.8rem;color:var(--color-text-secondary);line-height:1.6}
+  .proj-pill{font-size:.7rem;background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);padding:3px 9px;border-radius:20px;color:var(--color-text-secondary);text-align:center;justify-self:end;align-self:start;white-space:nowrap}
+  .offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-bottom:3rem}
+  .offer{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:1.2rem}
+  .offer i{font-size:18px;color:#185FA5;margin-bottom:.6rem}
+  .offer-t{font-weight:500;font-size:.88rem;margin-bottom:.3rem}
+  .offer-d{font-size:.78rem;color:var(--color-text-secondary);line-height:1.6;margin-bottom:.7rem}
+  .offer-p{font-size:.74rem;font-weight:500;color:#185FA5;background:#E6F1FB;padding:3px 10px;border-radius:20px;display:inline-block}
+  .steps{display:flex;flex-direction:column;gap:0;margin-bottom:3rem}
+  .step{display:flex;gap:1.25rem;padding:1.1rem 0;border-bottom:0.5px solid var(--color-border-tertiary)}
+  .step:last-child{border-bottom:none}
+  .step-n{font-family:'Playfair Display',serif;font-size:1.3rem;color:#185FA5;font-weight:600;min-width:26px}
+  .step-t{font-weight:500;font-size:.88rem;margin-bottom:.25rem}
+  .step-d{font-size:.8rem;color:var(--color-text-secondary);line-height:1.6}
+  .about-row{display:flex;gap:1.5rem;margin-bottom:3rem;flex-wrap:wrap}
+  .av{width:60px;height:60px;border-radius:50%;background:#B5D4F4;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:#0C447C;flex-shrink:0}
+  .about-body{font-size:.85rem;color:var(--color-text-secondary);line-height:1.8;flex:1;min-width:240px}
+  .about-body strong{color:var(--color-text-primary);font-weight:500}
+  .cta-box{background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:2rem;text-align:center}
+  .cta-box h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:600;margin-bottom:.7rem}
+  .cta-box p{font-size:.88rem;color:var(--color-text-secondary);margin-bottom:1.5rem;line-height:1.7}
+  .who-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:12px;margin-bottom:3rem}
+  .who{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:.9rem 1rem}
+  .who-t{font-size:.83rem;font-weight:500;margin-bottom:.25rem}
+  .who-d{font-size:.76rem;color:var(--color-text-secondary);line-height:1.55}
+  .accent-bar{width:32px;height:3px;background:#185FA5;border-radius:2px;margin-bottom:1.5rem}
+</style>
+
+<div class="lp">
+  <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">AI Strategy and Computer Vision consulting landing page</h2>
+
+  <p class="eyebrow">Computer Vision & AI Systems Consulting</p>
+  <h1 class="hero-name">Your AI vendor sold you a demo.<br><em>I'll tell you if it actually works.</em></h1>
+  <p class="hero-sub">I'm a Computer Vision researcher and AI systems consultant. I've built fraud detection systems, real-time safety AI for drones, and edge intelligence in Rust. I help companies evaluate, audit, and implement AI that holds up outside the demo environment.</p>
+
+  <div class="cta-row">
+    <a class="btn-p" onclick="sendPrompt('Draft a short outreach email I can send to a Twin Cities company to introduce my AI consulting services')">Book a free strategy call ↗</a>
+    <a class="btn-s" onclick="sendPrompt('Tell me more about the AI Readiness Audit offer')">See the AI Audit →</a>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag"><i class="ti ti-map-pin" aria-hidden="true"></i> Minnesota · Remote available</span>
+    <span class="tag"><i class="ti ti-school" aria-hidden="true"></i> Asst. Professor, CS · St. Cloud State</span>
+    <span class="tag"><i class="ti ti-certificate" aria-hidden="true"></i> PhD, Computer Science</span>
+    <span class="tag"><i class="ti ti-eye" aria-hidden="true"></i> Computer Vision · Edge AI · Fraud Detection</span>
+  </div>
+
+  <hr class="div">
+
+  <p class="slabel">By the numbers</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-n">PhD</div><div class="stat-l">Generative modeling & neural networks</div></div>
+    <div class="stat"><div class="stat-n">20+</div><div class="stat-l">Student AI projects mentored</div></div>
+    <div class="stat"><div class="stat-n">4</div><div class="stat-l">Production AI systems shipped</div></div>
+    <div class="stat"><div class="stat-n">0</div><div class="stat-l">Vendor kickbacks. Ever.</div></div>
+  </div>
+
+  <hr class="div">
+
+  <p class="slabel">Core consulting domains</p>
+  <div class="domains">
+    <div class="domain">
+      <i class="ti ti-shield-check domain-icon" aria-hidden="true"></i>
+      <p class="domain-title">Fraud & Synthetic Identity Detection</p>
+      <p class="domain-desc">Built a GAN-based detector that identifies AI-generated avatars and synthetic profiles. Applicable to fintech KYC, HR screening, platform trust, and cybersecurity.</p>
+      <span class="domain-tag">Fintech · Insurance · Platforms</span>
+    </div>
+    <div class="domain">
+      <i class="ti ti-drone domain-icon" aria-hidden="true"></i>
+      <p class="domain-title">Real-Time Safety & Visual Inspection AI</p>
+      <p class="domain-desc">PyroScan: drone-based wildfire detection using CV under real-world constraints. Safety-critical computer vision for energy, utilities, agriculture, and industrial settings.</p>
+      <span class="domain-tag">Energy · Agriculture · Industrial</span>
+    </div>
+    <div class="domain">
+      <i class="ti ti-cpu domain-icon" aria-hidden="true"></i>
+      <p class="domain-title">Edge AI & Secure Inference</p>
+      <p class="domain-desc">Rust + Python + on-device ML. AI that runs locally, fast, and without sending your data to a third-party cloud. Built CharmGuard — a Rust-based local AI firewall.</p>
+      <span class="domain-tag">Healthcare · Legal · Compliance</span>
+    </div>
+    <div class="domain">
+      <i class="ti ti-search domain-icon" aria-hidden="true"></i>
+      <p class="domain-title">AI Vendor Evaluation & Audit</p>
+      <p class="domain-desc">I read the technical spec, not just the pitch deck. I identify what your vendor can't deliver before you sign — or audit what you've already deployed.</p>
+      <span class="domain-tag">All industries</span>
+    </div>
+  </div>
+
+  <hr class="div">
+
+  <p class="slabel">Selected projects (case study conversations available)</p>
+  <div class="projects">
+    <div class="proj">
+      <div>
+        <p class="proj-name">PyroScan — Drone-Based Wildfire Detection</p>
+        <p class="proj-desc">Real-time computer vision system for early wildfire detection from drone footage. Designed for speed and reliability in safety-critical environments with limited connectivity.</p>
+      </div>
+      <span class="proj-pill">Safety AI · CV</span>
+    </div>
+    <div class="proj">
+      <div>
+        <p class="proj-name">GAN Fake Profile Detector</p>
+        <p class="proj-desc">Identifies AI-generated avatars and synthetic identities using generative adversarial network analysis. Directly applicable to fraud prevention, KYC, and platform trust systems.</p>
+      </div>
+      <span class="proj-pill">Fraud · Security</span>
+    </div>
+    <div class="proj">
+      <div>
+        <p class="proj-name">CharmGuard — Rust AI Firewall (in progress)</p>
+        <p class="proj-desc">Local, Rust-based AI system that monitors and blocks distractions at the OS level. Relevant to data-private AI deployments and compliance-sensitive organizations.</p>
+      </div>
+      <span class="proj-pill">Edge AI · Rust</span>
+    </div>
+    <div class="proj">
+      <div>
+        <p class="proj-name">Charm — LSTM Productivity App</p>
+        <p class="proj-desc">AI-powered productivity tool for students with ADHD, using long short-term memory models to adapt to individual focus patterns. Demonstrates accessible AI design.</p>
+      </div>
+      <span class="proj-pill">EdTech · Accessibility</span>
+    </div>
+  </div>
+
+  <hr class="div">
+
+  <p class="slabel">What I offer</p>
+  <div class="offers">
+    <div class="offer">
+      <i class="ti ti-clipboard-check" aria-hidden="true"></i>
+      <p class="offer-t">AI Readiness Audit</p>
+      <p class="offer-d">3-week review of your AI stack, vendor claims, data pipeline, and strategic alignment. Executive report + presentation. Actionable, not academic.</p>
+      <span class="offer-p">$7,500 flat</span>
+    </div>
+    <div class="offer">
+      <i class="ti ti-eye" aria-hidden="true"></i>
+      <p class="offer-t">Computer Vision Implementation</p>
+      <p class="offer-d">Object detection, anomaly detection, real-time visual inspection. If your problem involves a camera and a decision, I can build or audit the system.</p>
+      <span class="offer-p">Project-based</span>
+    </div>
+    <div class="offer">
+      <i class="ti ti-refresh" aria-hidden="true"></i>
+      <p class="offer-t">Fractional AI Advisor</p>
+      <p class="offer-d">Monthly retainer. Two strategy calls + async access + quarterly roadmap. An AI research director for 4% of the cost of hiring one.</p>
+      <span class="offer-p">$4,000/month</span>
+    </div>
+    <div class="offer">
+      <i class="ti ti-presentation" aria-hidden="true"></i>
+      <p class="offer-t">Executive AI Workshop</p>
+      <p class="offer-d">Half-day session for your leadership team. Vendor evaluation, AI risk, and how to build an internal AI strategy that survives contact with reality.</p>
+      <span class="offer-p">$4,500 – $8,000</span>
+    </div>
+  </div>
+
+  <hr class="div">
+
+  <p class="slabel">Who this is for</p>
+  <div class="who-grid">
+    <div class="who">
+      <p class="who-t">Companies that bought AI tools without a strategy</p>
+      <p class="who-d">You have subscriptions. You don't have outcomes. Let's fix the roadmap.</p>
+    </div>
+    <div class="who">
+      <p class="who-t">Teams evaluating AI vendors right now</p>
+      <p class="who-d">You want a technical expert in your corner before you sign, not after.</p>
+    </div>
+    <div class="who">
+      <p class="who-t">Organizations with sensitive data</p>
+      <p class="who-d">Healthcare, legal, finance — you need AI that doesn't route your data through someone else's cloud.</p>
+    </div>
+    <div class="who">
+      <p class="who-t">Startups building AI-first products</p>
+      <p class="who-d">You need a fractional technical advisor who can review architecture and keep you honest.</p>
+    </div>
+  </div>
+
+  <hr class="div">
+
+  <p class="slabel">How it works</p>
+  <div class="steps">
+    <div class="step">
+      <span class="step-n">01</span>
+      <div><p class="step-t">Free 30-minute strategy call</p><p class="step-d">We map your AI situation and goals. I'll tell you what I think honestly — including if I'm not the right fit.</p></div>
+    </div>
+    <div class="step">
+      <span class="step-n">02</span>
+      <div><p class="step-t">Scoped proposal with fixed pricing</p><p class="step-d">Clear deliverables, timeline, and a flat price. No hourly billing, no scope creep surprises.</p></div>
+    </div>
+    <div class="step">
+      <span class="step-n">03</span>
+      <div><p class="step-t">Delivery + implementation support</p><p class="step-d">Actionable output your team can actually use. I stay available through implementation questions at no extra charge.</p></div>
+    </div>
+  </div>
+
+  <hr class="div">
+
+  <p class="slabel">About</p>
+  <div class="about-row">
+    <div class="av">BG</div>
+    <p class="about-body">
+      I'm an Assistant Professor of Computer Science at St. Cloud State University and head of the university's AI Innovation & Research Committee. My PhD focused on generative modeling, machine learning, and neural networks — with applied work spanning drone-based safety systems, deepfake detection, and edge AI in Rust.<br><br>
+      <strong>I consult because I kept seeing companies deploy AI that no one on their team could explain, audit, or fix when it failed.</strong> My value isn't knowing the latest model — it's understanding the fundamentals underneath it well enough to tell you when something won't survive production.<br><br>
+      I work with a small number of clients at a time. I don't take every engagement. If you're looking for someone to validate a decision you've already made, I'm probably not your person. If you want the honest technical read, let's talk.<br><br>
+      <strong>Based in Minnesota. Available for Twin Cities engagements and remote advisory.</strong>
+    </p>
+  </div>
+
+  <hr class="div">
+
+  <div class="cta-box">
+    <h2>Ready for AI that actually works?</h2>
+    <p>Book a free 30-minute call. You'll leave with clarity on your AI situation — whether or not we work together. No pitch, no pressure.</p>
+    <a class="btn-p" onclick="sendPrompt('Help me prepare for my first AI consulting discovery call — what questions should I ask and how should I run it?')">Book your free call ↗</a>
+  </div>
+</div>
